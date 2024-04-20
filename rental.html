@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>SHE SHARE VACATION RENTALS</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <div>
+            <h1>SHE SHARE VACATION RENTALS</h1>
+          </div>
+          <nav>
+            <ul>
+              <li>Welcome</li>
+              <li>Safety</li>
+              <li>
+                Adventure
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </li>
+              <li>
+                Community
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <button class="btn">Login</button>
+            <button class="btn">Registration</button>
+          </div>
+        </header>
+        <div class="rent-button">
+          <button class="btn center-button">Share Your Room</button>
+          <button class="btn center-button" onclick="redirectToPage()">
+            Rent A Room
+          </button>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="container">
+        <h1>Availability in Cities</h1>
+        <div class="grid-container" id="city-grid">
+          <div
+            class="box"
+            style="
+              background-image: url('https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRxsLtvngiKxKjIy8pJaXB3Fo7pv22cAXXryzZSg3pW20Ux1Rn2ATnnndoCrlW7J9k7');
+            "
+          >
+            <a href="#">Pune</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRp5R_NI-3-HYsykq5H-oO3xNi0ZjiFklLZIw_4TD_CJ70I4Ofk8NwHBaQFmP-ExELd');
+            "
+          >
+            <a href="#">Hyderabad</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t2.gstatic.com/images?q=tbn:ANd9GcTS1o3t9UPgsNWzC6F0zwH9nr_Wp4BxDXGGmCSZyYqDeIlO0ocW5ceozpJIV4PzNWMZ2qfR');
+            "
+          >
+            <a href="#">Bangalore</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t1.gstatic.com/images?q=tbn:ANd9GcTI3QpZaIZfZYS8uEctasC0tBx_MYYmEf2QSi-sNVnXJtoWFKrOWNK8032mDaMvQSzJzQZo');
+            "
+          >
+            <a href="#">Mumbai</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t0.gstatic.com/images?q=tbn:ANd9GcRWstg5IiUEz2R3MCuokOC4wsNUJE0FBMxdHHH0k8iFhQgmGGIFx7Aj949GtArnwFSTzyBC');
+            "
+          >
+            <a href="#">Ahmedabad</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/40/Jama_Masjid_2011.jpg');
+            "
+          >
+            <a href="#">Delhi</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t3.gstatic.com/images?q=tbn:ANd9GcStuJX8-HE7cmjvqQOUiUmOlMgYjmJZtYZ98gUK4eMAkpH6m9A2IAul2-0hdioxD_qedr8a');
+            "
+          >
+            <a href="#">Kolkata</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQvW_1qyBk_69uLUA2bWjnNO1Kjd4pqAwDXsW40Y83_MuzG_qygh_ptujgoaFxouLMh');
+            "
+          >
+            <a href="#">Visakhapatnam</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t0.gstatic.com/images?q=tbn:ANd9GcRr9EeyngzMBGtjTxJT6pblgB31JwZt1ypwTaPQwpOBP0wGvAZjZE3V0psvKrrhSjzKZomv');
+            "
+          >
+            <a href="#">Indore</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t2.gstatic.com/images?q=tbn:ANd9GcRxAsmEfdRFFFfWdD1NTanEw08tmEQ5twkKOJD0o97MF5Wc5U6gKp1hnEgg4QtD4WtMAgve');
+            "
+          >
+            <a href="#">Jaipur</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC8DGFbLH3Osj7f2axFCDrH4YUdCkon-aeKrCWncNLz-z_8mQn');
+            "
+          >
+            <a href="#">Kanpur</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQ0vAFwiV3sqKtqbIzjnNFIinpVdz1ZUbG_t7x9e6ZpLN2P5ODH3JQiVmpxDPzOGzKt');
+            "
+          >
+            <a href="#">Bhopal</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRPvuPSb4KR2cTnhijJpuqd9CNKKrMyOly5olbRjb1qoG_C8rU6UcRUWWg5mSWXnt-X');
+            "
+          >
+            <a href="#">Kochi</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXVP7AS4UUitCGpu7u8wEw7s2B79IZOyS7BQF68-U6G_mFdFs');
+            "
+          >
+            <a href="#">Lucknow </a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t2.gstatic.com/images?q=tbn:ANd9GcRT2kp4lT2pBkeGwgkYaBEbFTFyV8HNaBpWLukWrnDu-Ot0NBNPhJR6GEUVoLtULs8vfa9P');
+            "
+          >
+            <a href="#">Nagpur</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t1.gstatic.com/images?q=tbn:ANd9GcTjXlg8C-TSQrVXfFrnbMNTlIlo3KdopIkjTOCL8FLh0Pe6fCcXQfJ-sN0yAi1haZlGLpBB');
+            "
+          >
+            <a href="#">Patna</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('http://t1.gstatic.com/images?q=tbn:ANd9GcRdmGyw8VBefC9bJpaRDKxh_sygIN9j_XIXGYxiykHlnTNBoTZiN2ZzXKVUjAAHiPMPQClD');
+            "
+          >
+            <a href="#">Guwahati</a>
+          </div>
+          <div
+            class="box"
+            style="
+              background-image: url('https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSmUPKjpKpAjbkQLpmVM5fMLfJTHDMk3Xz0va0GYJvonx0QihDJU70z96Rf73Kwumc7');
+            "
+          >
+            <a href="#">Chennai</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col">
+          <h2 class="footer-heading">SHE SHARES</h2>
+          <ul class="footer-list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Follow us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Support</h2>
+          <ul class="footer-list">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Become a Host</h2>
+          <ul class="footer-list">
+            <li><a href="#">Hosting Resources</a></li>
+            <li><a href="#">Hosting Responsibilities</a></li>
+            <li><a href="#">Share a Room</a></li>
+            <li><a href="#">Pets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Terms & Privacy</h2>
+          <ul class="footer-list">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function redirectToPage() {
+        window.location.href = "rent-a-room.html";
+      }
+    </script>
+  </body>
+</html>
