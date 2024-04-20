@@ -6,20 +6,18 @@
     <title>Thank You!</title>
     <style>
       body {
-        background-image: url("https://images.unsplash.com/photo-1586982599726-11708daaceca?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-color: #f9dfe5; /* Light pink background */
         height: 100vh;
         width: 100vw;
         overflow: hidden;
         position: relative;
         cursor: pointer;
-        background-size: cover;
-        background-position: center;
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
       }
 
-      .container {
+      .thank-container {
         width: 80%;
         max-width: 600px;
         margin: 0 auto;
@@ -33,46 +31,100 @@
         transition: transform 0.3s ease-in-out;
       }
 
-      .container:hover {
+      .thank-container:hover {
         transform: translateY(-5px);
       }
 
-      h1 {
+      .thank-title {
         color: #333;
         font-size: 36px;
         margin-bottom: 20px;
         transition: color 0.3s ease-in-out;
       }
 
-      p {
+      .thank-message {
         color: #555;
         font-size: 18px;
         line-height: 1.5;
         transition: color 0.3s ease-in-out;
       }
 
-      a {
+      .thank-link {
         color: #007bff;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
       }
 
-      a:hover {
+      .thank-link:hover {
         text-decoration: underline;
         color: #0056b3;
+      }
+
+      .slogan-container {
+        color: #f36b7e; /* Pink slogan text */
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .letter {
+        display: inline-block;
+        opacity: 0;
+        animation: slideIn 0.5s forwards;
+      }
+
+      .space {
+        margin-right: 0.3em; /* Adjust space between letters */
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(
+            -50px
+          ); /* Change from translateY to translateX */
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Thank You for Submitting Your Details!</h1>
-      <p>
-        We appreciate your input. Your information has been successfully
-        submitted.
+    <div class="thank-container">
+      <h1 class="thank-title">Thank You for Choosing Us!</h1>
+      <p class="thank-message">
+        Your comfort and safety are our priority. Your details have been
+        successfully submitted.
       </p>
-      <p><a href="rental.html">Go Back</a></p>
+      <p><a class="thank-link" href="rental.html">Go Back</a></p>
       <!-- Link back to the rent a room page -->
+      <div class="slogan-container" id="slogan-container">
+        <!-- Text will be added dynamically using JavaScript -->
+      </div>
     </div>
-    <script></script>
+
+    <script>
+      const sloganContainer = document.getElementById("slogan-container");
+      const sloganText = "Experience Comfort & Safety with Us";
+      const words = sloganText.split(" ");
+      for (let i = 0; i < words.length; i++) {
+        for (let j = 0; j < words[i].length; j++) {
+          const span = document.createElement("span");
+          span.textContent = words[i][j];
+          span.classList.add("letter");
+          span.style.animationDelay = `${(i * 5 + j) * 0.1}s`;
+          sloganContainer.appendChild(span);
+        }
+        if (i !== words.length - 1) {
+          const space = document.createElement("span");
+          space.textContent = "";
+          space.classList.add("space");
+          sloganContainer.appendChild(space);
+        }
+      }
+    </script>
   </body>
 </html>
