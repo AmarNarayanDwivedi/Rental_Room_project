@@ -137,14 +137,7 @@ nav ul li ul li {
     height: 100vh;
 }
 
-/* .center-heading {
-    color: #000000;
-    background-color: #f5f0f076;
-    margin-top: 10%;
-    font-size: 40px;
-    text-align: center;
-    animation: slide 10s infinite linear;
-} */
+
 
 .center-heading {
     font-size: 60px;
@@ -258,4 +251,5 @@ footer {
 .footer-list li a:hover {
     color: #ffd700;
 }
+
 
